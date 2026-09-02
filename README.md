@@ -52,6 +52,6 @@ Contact: Alexander Neubauer, Hermann Rietschel Institute, TU Berlin —
 
 This work is funded by the German Federal Ministry for Economic Affairs and
 Energy (BMWE) in the framework of the research program EnOB:ML-EBESR
-03EN1076B. The support is gratefully acknowledged. The author gratefully
+03EN1076B. The support is gratefully acknowledged. The first author gratefully
 acknowledges Lawrence Berkeley National Laboratory for hosting a research
 stay during which parts of this manuscript were prepared.

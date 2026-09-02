@@ -1,0 +1,113 @@
+# This CITATION.cff describes how to cite the HeatShift-HP software and the
+# paper it accompanies. Validate with `cffconvert --validate` before release.
+#
+# ---------------------------------------------------------------------------
+# TWO AUTHOR LISTS, DELIBERATELY DIFFERENT
+# ---------------------------------------------------------------------------
+# The top-level `authors` list is the *software* authorship: Alexander
+# Neubauer wrote and maintains this code base. The seven-name list under
+# `preferred-citation` is the *article's* author list. They are not the same
+# thing and must not be aligned with each other.
+#
+# ---------------------------------------------------------------------------
+# TO FILL IN AT PUBLICATION TIME
+# ---------------------------------------------------------------------------
+# Two fields are deliberately left out rather than filled with placeholder
+# values: their values do not exist yet, and a CFF validator should not have
+# to tolerate a fake URL or date in the meantime. Each is marked with a
+# commented-out key at the position it belongs in, so adding it is a matter of
+# uncommenting and filling the value.
+#
+#   repository-code   the public repository URL, once a public remote exists
+#                     (add `url:` alongside it if they differ)
+#   date-released     the date of the first public push, as YYYY-MM-DD
+#
+# There is deliberately no top-level `doi:`. The software is not deposited in
+# an archive and has no DOI of its own; it is cited by name, version and the
+# repository URL above. The only DOI in this file is the article's, recorded
+# under `preferred-citation`.
+# ---------------------------------------------------------------------------
+
+cff-version: 1.2.0
+message: >-
+  If you use this software, please cite both the software itself (this file)
+  and the article that introduces it (see "preferred-citation" below).
+title: "HeatShift-HP"
+abstract: >-
+  Python/Modelica co-simulation workflow for assessing heat-pump load
+  shifting under dynamic electricity tariffs and grid fees. Couples a
+  generic Modelica air-to-water heat pump and stratified-storage plant
+  model, exported as an FMI 2.0 Co-Simulation FMU, with a Python
+  supervisory framework: guarded rule-based controllers (standard
+  weather-compensated and price-based), FMU co-simulation via FMPy, a
+  parameter-study framework, and analysis scripts/notebooks. Developed for
+  and evaluated in the accompanying "HeatShift-HP" article, published in
+  Energy and Buildings (Berlin and Chicago, 2025 weather and hourly retail
+  prices).
+type: software
+version: 1.0.0
+# date-released:
+license: MIT
+repository-code: "https://github.com/AlexanderNeubauer/heatshift-hp"
+# Software authorship. The article's seven authors are listed separately
+# under `preferred-citation` below; see the note at the top of this file.
+authors:
+  - family-names: Neubauer
+    given-names: Alexander
+    email: a.neubauer@tu-berlin.de
+    affiliation: "Hermann-Rietschel-Institut, Technische Universität Berlin"
+contact:
+  - family-names: Neubauer
+    given-names: Alexander
+    email: a.neubauer@tu-berlin.de
+    affiliation: "Hermann-Rietschel-Institut, Technische Universität Berlin"
+keywords:
+  - heat pump
+  - load shifting
+  - demand response
+  - dynamic tariffs
+  - FMI
+  - FMU
+  - Modelica
+  - co-simulation
+preferred-citation:
+  type: article
+  title: "HeatShift-HP: A Techno-Economic Framework for Assessing Heat Pump Load Shifting under Dynamic Tariffs and Grid Fees"
+  authors:
+    - family-names: Neubauer
+      given-names: Alexander
+      email: a.neubauer@tu-berlin.de
+      affiliation: "Hermann-Rietschel-Institut, Technische Universität Berlin"
+    - family-names: Awasthi-Hilgendorf
+      given-names: Oliver
+      affiliation: "Hermann-Rietschel-Institut, Technische Universität Berlin"
+    - family-names: Grant
+      given-names: Peter
+      affiliation: "Lawrence Berkeley National Laboratory"
+    - family-names: Hong
+      given-names: Tianzhen
+      affiliation: "Lawrence Berkeley National Laboratory"
+    - family-names: Fürst
+      given-names: Yannick
+      affiliation: "Hermann-Rietschel-Institut, Technische Universität Berlin"
+    - family-names: Brandt
+      given-names: Stefan
+      affiliation: "Hermann-Rietschel-Institut, Technische Universität Berlin"
+    - family-names: Kriegel
+      given-names: Martin
+      affiliation: "Hermann-Rietschel-Institut, Technische Universität Berlin"
+  journal: "Energy and Buildings"
+  year: 2026
+  # Energy and Buildings numbers articles rather than paginating them:
+  # 118164 is the article number, recorded here as the start page because
+  # CFF's `pages` key means "number of pages", which this is not.
+  start: "118164"
+  issn: "0378-7788"
+  doi: "10.1016/j.enbuild.2026.118164"
+  url: "https://www.sciencedirect.com/science/article/pii/S0378778826012247"
+  keywords:
+    - Heat pump
+    - Thermal energy storage
+    - Load shifting
+    - Dynamic electricity tariff
+    - Building energy flexibility
